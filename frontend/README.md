@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Shifting Sands – Dylan Sands Music Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack portfolio project that showcases the music of **Dylan Sands** using a custom React frontend and a Node/Express backend that connects to the Spotify Web API.
 
-## Available Scripts
+All music in this app was **written, sung, performed, and produced by Dylan Sands**. Every track was composed and mixed in **FL Studio**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎧 What this project does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This app lets you:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Browse a curated set of Dylan's songs from Spotify
+- See track details (title, album art, release info, etc.)
+- Read short descriptions that give context or “the story” behind each track
+- Open songs directly on Spotify
+- Favorite tracks locally (stored in the browser)
 
-### `npm test`
+It’s designed as a **real-world portfolio piece** to show:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Frontend skills with **React**
+- Backend skills with **Node + Express**
+- Calling external APIs (**Spotify Web API**)
+- Managing async state, loading, and error conditions
+- Presenting technical work in a polished, artist-focused UI
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧱 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Frontend**
+- React
+- Custom CSS
+- LocalStorage persistence
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Backend**
+- Node.js
+- Express.js
+- Spotify Web API
+- Environment variables for secure keys
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧑‍🎤 About the music
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All songs featured in this project were created by **Dylan Sands**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+He is the:
+- **Singer**
+- **Composer**
+- **Musician**
+- **Producer**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Every track was fully created, recorded, and mixed in **FL Studio**.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Running the project locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the repo
 
-### Code Splitting
+```bash
+git clone https://github.com/sands-creates/shifting-sands-music.git
+cd shifting-sands-music
+```
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Backend setup
 
-### Analyzing the Bundle Size
+```bash
+cd backend
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create a `.env` file inside the `backend` folder:
 
-### Making a Progressive Web App
+```ini
+SPOTIFY_CLIENT_ID=your_id_here
+SPOTIFY_CLIENT_SECRET=your_secret_here
+SPOTIFY_REDIRECT_URI=http://localhost:5000/callback
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the backend server:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend runs on:
 
-### Deployment
+```
+http://localhost:5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 3. Frontend setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+cd ../frontend
+npm install
+npm start
+```
+
+Frontend runs on:
+
+```
+http://localhost:3000
+```
+
+The frontend expects the backend to be running first.
+
+---
+
+## 🧠 What I learned
+
+- Building a full-stack React + Node application  
+- Connecting a backend API to an external service (Spotify)  
+- Managing async state, loading states, and error handling  
+- Using LocalStorage to save favorites  
+- Organizing a professional full-stack project  
+- Git & GitHub workflow  
+- Writing a clean, professional README  
+
+---
+
+## ✨ Credits
+
+**Music:** Written, sung, performed, and produced by **Dylan Sands** in **FL Studio**.  
+**Development:** Full-stack application built as a portfolio project.
